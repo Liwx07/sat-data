@@ -35,6 +35,24 @@ public class Main {
     }
     double average = (double)total / totalScore.size();
     System.out.println(average);
+
+    
+    int lowestScore = totalScore.get(0);
+    for (int score : totalScore) {
+      if (score < lowestScore) {
+        lowestScore = score;
+      }
+    }
+    System.out.println("Lowest score: " + lowestScore);
+
+    int highestScore = totalScore.get(0);
+    for (int score : totalScore) {
+      if (score > highestScore) {
+        highestScore = score;
+      }
+    }
+    System.out.println("Highest score: " + highestScore);
+
     
   }
 
